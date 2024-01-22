@@ -1,0 +1,50 @@
+
+.profile{
+    position: absolute;
+    padding: 2rem 0rem;
+    box-shadow: none;
+    font-size: 1.1rem;
+    width: 20rem;
+    border-radius: 1rem;
+
+    right: 0rem;
+    top: 10rem;
+    z-index: 22222222222;
+    background-color: rgb(76, 76, 115);
+    /* background-color: var(--main-bg-color); */
+}
+
+.profile_account{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.profile_account_img{
+    border-radius: 50%;
+}
+
+.profile_account_info{
+    line-height: 1.5;
+}
+
+.profile_account_info p{
+    font-weight: 600;
+}
+
+.profile_menu_one_item{
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    gap: 2rem;
+    padding: 0rem 1.5rem;
+    transition:  all .3s ease-in;
+}
+
+.profile_menu_one_item:hover{
+    background-color: rgb(44, 44, 67);
+    /* background-color: var(--icons-color); */
+    color: var(--shadow-dark-color);
+    border-radius: .3rem;
+}
