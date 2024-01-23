@@ -28,6 +28,8 @@ import service2 from "./service-2.png";
 import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 
+import herosection from "./hero_section.jpeg";
+
 export  default {
     collection,
     creatorbackground1,
@@ -56,4 +58,5 @@ export  default {
     service3,
     service4,
     logo,
+    herosection,
 }
