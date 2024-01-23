@@ -132,8 +132,8 @@ const NavBar = () => {
             <Button btnName="Create" handleClick={() => {}} />
           </div>
 
-          {/* CREATE PROFILE */}
-          <div className={Style.navbar_container_right_pofile_box}>
+          {/* USER PROFILE */}
+          <div className={Style.navbar_container_right_profile_box}>
             <div className={Style.navbar_container_right_profile}>
               <Image
                 src={images.user1}
@@ -157,7 +157,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDEBAR COMPENET */}
+      {/* SIDEBAR COMPONENT */}
       {
         openSideMenu && (
           <div className={Style.sideBar}>

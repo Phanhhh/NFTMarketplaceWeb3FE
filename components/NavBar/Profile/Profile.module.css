@@ -1,14 +1,14 @@
 
 .profile{
     position: absolute;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     box-shadow: none;
     font-size: 1.1rem;
     width: 20rem;
     border-radius: 1rem;
 
     right: 0rem;
-    top: 10rem;
+    top: 4rem;
     z-index: 22222222222;
     background-color: rgb(76, 76, 115);
     /* background-color: var(--main-bg-color); */
