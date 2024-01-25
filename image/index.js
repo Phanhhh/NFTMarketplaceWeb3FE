@@ -45,6 +45,8 @@ import nft_ape_5 from "./nft-ape-5.jpeg";
 
 import herosection from "./hero_section.jpeg";
 
+import update from "./update.png";
+
 export default {
   collection,
   creatorbackground1,
@@ -86,4 +88,5 @@ export default {
   nft_image_1,
   nft_image_2,
   nft_image_3,
+  update,
 };
