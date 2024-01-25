@@ -22,8 +22,9 @@ const HeroSection = () => {
               <Image
                 src={images.herosection}
                 alt="Hero section"
-                width={650}
-                height={500}
+                layout="responsive"
+                width={580}
+                height={470}
               />
             </div>
           </div>

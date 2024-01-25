@@ -25,8 +25,17 @@
 
 @media screen and (max-width: 35em) {
     .heroSection{
-        width: 90%;
+        max-width: 90%;
     }
+
+    .heroSection_box_left h1{
+        line-height: 1;
+        font-size: 1rem;
+    }
+}
+
+.heroSection_box_right{
+    position: relative;
 }
 
 @media screen and (max-width: 55em) {
@@ -42,5 +51,12 @@
     .heroSection_box_left h1{
         line-height: 1;
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    .heroSection_box_left h1{
+        line-height: 1;
+        font-size: 2rem;
     }
 }

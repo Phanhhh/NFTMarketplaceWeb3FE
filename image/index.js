@@ -28,35 +28,62 @@ import service2 from "./service-2.png";
 import service3 from "./service-3.png";
 import service4 from "./service-4.png";
 
+import nft_raccoon_1 from "./nft-raccoon-1.webp";
+import nft_raccoon_2 from "./nft-raccoon-2.jpeg";
+import nft_raccoon_3 from "./nft-raccoon-3.jpeg";
+import nft_cat_4 from "./nft-cat_4.png";
+import nft_fox_2 from "./nft-fox_2.jpeg";
+import nft_fox_3 from "./nft-fox_3.jpeg";
+
+import nft_image_1 from "./nft-image-1.png";
+import nft_image_2 from "./nft-image-2.png";
+import nft_image_3 from "./nft-image-3.png";
+// import nft_ape_2 from "./nft-ape-2.png";
+import nft_ape_3 from "./nft-ape-3.jpeg";
+import nft_ape_4 from "./nft-ape-4.jpeg";
+import nft_ape_5 from "./nft-ape-5.jpeg";
+
 import herosection from "./hero_section.jpeg";
 
-export  default {
-    collection,
-    creatorbackground1,
-    creatorbackground2,
-    creatorbackground3,
-    creatorbackground4,
-    creatorbackground5,
-    creatorbackground6,
-    creatorbackground7,
-    creatorbackground8,
-    creatorbackground9,
-    creatorbackground10,
-    creatorbackground11,
-    user1,
-    user2,
-    user3,
-    user4,
-    user5,
-    user6,
-    user7,
-    user8,
-    user9,
-    user10,
-    service1,
-    service2,
-    service3,
-    service4,
-    logo,
-    herosection,
-}
+export default {
+  collection,
+  creatorbackground1,
+  creatorbackground2,
+  creatorbackground3,
+  creatorbackground4,
+  creatorbackground5,
+  creatorbackground6,
+  creatorbackground7,
+  creatorbackground8,
+  creatorbackground9,
+  creatorbackground10,
+  creatorbackground11,
+  user1,
+  user2,
+  user3,
+  user4,
+  user5,
+  user6,
+  user7,
+  user8,
+  user9,
+  user10,
+  service1,
+  service2,
+  service3,
+  service4,
+  logo,
+  herosection,
+  nft_raccoon_1,
+  nft_raccoon_2,
+  nft_raccoon_3,
+  nft_cat_4,
+  nft_fox_2,
+  nft_fox_3,
+  nft_ape_3,
+  nft_ape_4,
+  nft_ape_5,
+  nft_image_1,
+  nft_image_2,
+  nft_image_3,
+};
