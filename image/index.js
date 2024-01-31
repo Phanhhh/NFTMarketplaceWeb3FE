@@ -43,6 +43,8 @@ import nft_ape_3 from "./nft-ape-3.jpeg";
 import nft_ape_4 from "./nft-ape-4.jpeg";
 import nft_ape_5 from "./nft-ape-5.jpeg";
 
+import musicWave from "./musicwave.png";
+
 import herosection from "./hero_section.jpeg";
 
 import update from "./update.png";
@@ -89,4 +91,5 @@ export default {
   nft_image_2,
   nft_image_3,
   update,
+  musicWave,
 };
