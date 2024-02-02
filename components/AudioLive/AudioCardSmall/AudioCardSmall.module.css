@@ -8,7 +8,7 @@
     background-color:  #fff;
     padding: .5rem 1rem;
     border-radius: 1rem;
-    height: 8rem;
+    height: 10rem;
     transition: all .3s ease-in;
     cursor: pointer;
     color: #000;
@@ -67,5 +67,9 @@
     .audioPlayer_box_info_box_price p{
         padding: 0.1rem .3rem;
         font-size: 0.6rem;
+    }
+
+    .audioPlayer_box_img{
+        max-height: 50%;
     }
 }

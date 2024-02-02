@@ -49,6 +49,10 @@ import herosection from "./hero_section.jpeg";
 
 import update from "./update.png";
 
+import earn from "./earn.png";
+
+import NFTVideo from "./nft-video.png";
+
 export default {
   collection,
   creatorbackground1,
@@ -92,4 +96,6 @@ export default {
   nft_image_3,
   update,
   musicWave,
+  earn,
+  NFTVideo,
 };
