@@ -94,6 +94,7 @@
 .NFTCard_box_img_img{
     border-radius: 1rem;
     transition: all .4s ease-in;
+    max-height: 300px;
 }
 
 .NFTCard_box_update_details{
@@ -169,6 +170,10 @@
 
     .NFTCard_box_update_right{
         padding: .5rem 2rem;
+    }
+
+    .NFTCard_box_update_details_price_box h4{
+        font-size: 1rem;
     }
 
     .NFTCard_box_update_right_info p{

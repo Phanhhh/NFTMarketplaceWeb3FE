@@ -17,6 +17,7 @@
 
 .sliderCard_box_img_img{
     border-radius: 2rem;
+    max-height: 200px;
 }
 
 .sliderCard_box_title{

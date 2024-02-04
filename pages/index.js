@@ -30,8 +30,8 @@ const Home = () => {
         paragraph="Discover the latest Audio NFT Collection."
       />
       <AudioLive />
-      {/* <FollowerTab />
-      <Title
+      <FollowerTab />
+      {/* <Title
         heading="Explore NFTs Video"
         paragraph="Discover the beautiful NFTs Video."
       /> */}

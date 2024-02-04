@@ -34,10 +34,12 @@
 
 .FollowerTabCard_box_img {
   grid-column: 1 /-1;
+  z-index: -0;
 }
 
 .FollowerTabCard_box_img_img {
   border-radius: 2rem;
+  max-height: 200px;
 }
 
 .FollowerTabCard_box_profile {
@@ -47,6 +49,7 @@
   position: relative;
   z-index: 1;
 }
+
 .FollowerTabCard_box_profile::before {
   position: absolute;
   content: "";
@@ -75,6 +78,7 @@
   margin-top: -1rem;
   padding-inline: 1rem;
   padding-bottom: 1rem;
+  z-index: 5;
 }
 
 .FollowerTabCard_box_info h4 {
@@ -104,7 +108,7 @@
   }
 
   .FollowerTabCard_box_img_img {
-    height: 200;
+    max-height: 200;
   }
 }
 

@@ -12,6 +12,7 @@
 
 .daysComponent_box_img_img{
     border-radius: 1rem;
+    max-height: 200px;
 }
 
 .daysComponent_box_profile{
