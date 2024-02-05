@@ -39,7 +39,7 @@
 
 .FollowerTabCard_box_img_img {
   border-radius: 2rem;
-  max-height: 200px;
+  max-height: 180px;
 }
 
 .FollowerTabCard_box_profile {
@@ -108,7 +108,7 @@
   }
 
   .FollowerTabCard_box_img_img {
-    max-height: 200;
+    max-height: 180;
   }
 }
 

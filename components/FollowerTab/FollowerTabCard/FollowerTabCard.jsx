@@ -31,8 +31,8 @@ const FollowerTabCard = ({ i, el }) => {
             src={el.background}
             alt="profile background"
             layout="responsive"
-            width={500}
-            height={300}
+            width={400}
+            height={200}
             objectFit="cover"
           />
         </div>
