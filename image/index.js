@@ -53,6 +53,8 @@ import earn from "./earn.png";
 
 import NFTVideo from "./nft-video.png";
 
+import upload from "./upload.png";
+
 export default {
   collection,
   creatorbackground1,
@@ -98,4 +100,5 @@ export default {
   musicWave,
   earn,
   NFTVideo,
+  upload,
 };

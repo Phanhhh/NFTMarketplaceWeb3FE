@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 
 //INTERNAL IMPORT
@@ -26,7 +26,11 @@ const Discover = () => {
     },
     {
       name: "Account Setting",
-      link: "account-setting"
+      link: "account"
+    },
+    {
+      name: "Upload NFT",
+      link: "uploadNFT"
     },
     {
       name: "Connect Wallet",
