@@ -42,18 +42,22 @@ import nft_image_3 from "./nft-image-3.png";
 import nft_ape_3 from "./nft-ape-3.jpeg";
 import nft_ape_4 from "./nft-ape-4.jpeg";
 import nft_ape_5 from "./nft-ape-5.jpeg";
-
 import musicWave from "./musicwave.png";
-
 import herosection from "./hero_section.jpeg";
-
 import update from "./update.png";
-
 import earn from "./earn.png";
-
 import NFTVideo from "./nft-video.png";
-
 import upload from "./upload.png";
+
+import metamask from "./provider-1.png";
+import phantom from "./phontom.jpeg";
+import sui from "./sui.png";
+import keplr from "./keplr.png";
+
+import founder1 from "./founder1.png";
+import founder2 from "./founder2.png";
+import founder3 from "./founder3.png";
+import founder4 from "./founder4.png";
 
 export default {
   collection,
@@ -101,4 +105,12 @@ export default {
   earn,
   NFTVideo,
   upload,
+  metamask,
+  phantom,
+  sui,
+  keplr,
+  founder1,
+  founder2,
+  founder3,
+  founder4,
 };
