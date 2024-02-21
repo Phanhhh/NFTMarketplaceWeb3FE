@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.5",
+    "axios": "^1.6.7",
     "ether": "^0.0.9",
     "framer-motion": "^11.0.3",
+    "ipfs-http-client": "^60.0.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

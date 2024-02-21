@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect, useContext, Component } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,6 +12,9 @@ import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
 import { Button } from "../componentsindex";
 import images from "../../image";
+
+// IMPORT FROM SMART CONTRACT
+import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
 
 const NavBar = () => {
   //----USESTATE COMPONENTS
@@ -75,6 +78,9 @@ const NavBar = () => {
     }
   };
 
+  //Smart contract section
+  const { currentAccount, connectWallet } = useContext(NFTMarketplaceContext);
+
   return (
     <div className={Style.navbar}>
       <div className={Style.navbar_container}>
@@ -129,7 +135,13 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnName="Create" handleClick={() => {}} />
+            {currentAccount == "" ? (
+              <Button btnName="Connect" handleClick={() => connectWallet()} />
+            ) : (
+              <a href="/uploadNFT">
+                <Button btnName="Create" handleClick={()=>{}}/>
+              </a>
+            )}
           </div>
 
           {/* USER PROFILE */}
@@ -150,21 +162,20 @@ const NavBar = () => {
 
           {/* MENU BUTTON */}
           <div className={Style.navbar_container_right_menuBtn}>
-            <CgMenuRight className={Style.menuIcon}
-            onClick={()=> openSideBar()}
+            <CgMenuRight
+              className={Style.menuIcon}
+              onClick={() => openSideBar()}
             />
           </div>
         </div>
       </div>
 
       {/* SIDEBAR COMPONENT */}
-      {
-        openSideMenu && (
-          <div className={Style.sideBar}>
-            <SideBar setOpenSideMenu={setOpenSideMenu}/>
-          </div>
-        )
-      }
+      {openSideMenu && (
+        <div className={Style.sideBar}>
+          <SideBar setOpenSideMenu={setOpenSideMenu} />
+        </div>
+      )}
     </div>
   );
 };

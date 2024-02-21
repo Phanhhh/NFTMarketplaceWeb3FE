@@ -148,7 +148,7 @@ contract NFTMarketplace is ERC721URIStorage {
     }
 
     /// @dev function to create market sale and transfer data to new owner, remove tokenId in Market
-    function createMarketSales(uint256 tokenId) public payable {
+    function createMarketSale(uint256 tokenId) public payable {
         uint256 price = idMarketItem[tokenId].price;
 
         require(
