@@ -17,7 +17,7 @@ import Style from "./SideBar.module.css";
 import images from "../../../image";
 import Button from "../../Button/Button";
 
-const SideBar = ({setOpenSideMenu}) => {
+const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
   /* USESTATE */
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
@@ -141,39 +141,46 @@ const SideBar = ({setOpenSideMenu}) => {
           </div>
 
           {openDiscover && (
-              <div className={Style.sideBar_discover}>
-                {discover.map((el, i) => (
-                  <p key={i + 1}>
-                    <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
-                  </p>
-                ))}
-              </div>
-            )}
+            <div className={Style.sideBar_discover}>
+              {discover.map((el, i) => (
+                <p key={i + 1}>
+                  <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+                </p>
+              ))}
+            </div>
+          )}
         </div>
 
         <div>
-        <div
+          <div
             className={Style.sideBar_menu_box}
             onClick={() => openHelpMenu()}
           >
             <p>Help Center</p>
             <TiArrowSortedDown />
-        </div>
+          </div>
 
-        {openHelp && (
-              <div className={Style.sideBar_discover}>
-                {helpCenter.map((el, i) => (
-                  <p key={i + 1}>
-                    <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
-                  </p>
-                ))}
-              </div>
-            )}
+          {openHelp && (
+            <div className={Style.sideBar_discover}>
+              {helpCenter.map((el, i) => (
+                <p key={i + 1}>
+                  <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
       <div className={Style.sideBar_button}>
-        <Button btnName="Create" handleClick={() => {}} />
+        {currentAccount == "" ? (
+          <Button btnName="connect" handleClick={() => connectWallet()} />
+        ) : (
+          <a href="/uploadNFT">
+            <Button btnName="Create" handleClick={() => {}} />
+          </a>
+        )}
+
         <Button btnName="Connect Wallet" handleClick={() => {}} />
       </div>
     </div>

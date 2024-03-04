@@ -139,7 +139,7 @@ const NavBar = () => {
               <Button btnName="Connect" handleClick={() => connectWallet()} />
             ) : (
               <a href="/uploadNFT">
-                <Button btnName="Create" handleClick={()=>{}}/>
+                <Button btnName="Create" handleClick={() => {}} />
               </a>
             )}
           </div>
@@ -173,7 +173,11 @@ const NavBar = () => {
       {/* SIDEBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
-          <SideBar setOpenSideMenu={setOpenSideMenu} />
+          <SideBar
+            setOpenSideMenu={setOpenSideMenu}
+            currentAccount={currentAccount}
+            connectWallet={connectWallet}
+          />
         </div>
       )}
     </div>
